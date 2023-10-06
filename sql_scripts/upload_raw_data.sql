@@ -56,7 +56,8 @@ LOAD DATA local INFILE '.../SportsStats/csv_raw/noc_regions.csv' INTO TABLE NocR
     ENCLOSED BY '"'
     LINES TERMINATED BY '\r'
     IGNORE 1 ROWS
-    (NOC, Region,@n)
+    (NOC, @r, @n)
+    SET Region = NULLIF(@r,'NA')
     SET Notes = NULLIF(@n,'');
 
 
