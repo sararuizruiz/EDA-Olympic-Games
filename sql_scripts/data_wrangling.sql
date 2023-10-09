@@ -104,8 +104,8 @@ CREATE TABLE IF NOT EXISTS NOC (
 -- Insert Data into Teams Table (For NOCs appearing in our data)
 INSERT INTO NOC (NOC, Region, Notes)
 SELECT a.NOC, b.Region, b.Notes
-FROM SportsStats.AthleteEvents a
-LEFT JOIN SportsStats.NocRegions b ON a.NOC = b.NOC
+FROM RawSportsStats.AthleteEvents a
+LEFT JOIN RawSportsStats.NocRegions b ON a.NOC = b.NOC
 GROUP BY a.NOC, b.Region, b.Notes;
 
 -- Create Games Table
@@ -160,10 +160,10 @@ CREATE TABLE IF NOT EXISTS Events (
 -- Insert Data into Events Table
 INSERT INTO ProcessedSportsStats.Events (EventId, AthleteId, Age, Team, NOC, Games, Category, Medal)
 SELECT EventId, ID, Age, Team, NOC, '1956 Summer Equestrianism', Event, Medal 
-FROM SportsStats.AthleteEvents
+FROM RawSportsStats.AthleteEvents
 WHERE (Games = '1956 Summer' AND Sport = 'Equestrianism');
 
 INSERT INTO ProcessedSportsStats.Events (EventId, AthleteId, Age, Team, NOC, Games, Category, Medal)
 SELECT EventId, ID, Age, Team, NOC, Games, Event, Medal 
-FROM SportsStats.AthleteEvents
+FROM RawSportsStats.AthleteEvents
 WHERE NOT (Games = '1956 Summer' AND Sport = 'Equestrianism');
