@@ -8,7 +8,7 @@ as well as answer some related questions.
 **Email**: sararr090@gmail.com <br />
 **LinkedIn**: www.linkedin.com/in/sara-ruiz-ruiz  <br />
 
-#### Tech stack 🛠️
+**Tech stack** 🛠️ 
 * SQL - [MySQL](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwijr82z0OiBAxViU6QEHQmBAPwQFnoECAYQAQ&url=https%3A%2F%2Fwww.mysql.com%2F&usg=AOvVaw20c6IrMAtNC1A9NZPsDpWW&opi=89978449), [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 ## Introducing the originial datasets
