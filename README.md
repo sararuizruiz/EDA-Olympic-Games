@@ -16,8 +16,8 @@ The project scrapes data from different sources, in particular, we need two diff
 
 **120 years of Olympic history: athletes and results**.
 The dataset and its info can be accessed [here](https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results). <br />
-**Country Mapping - ISO, Continent, Region**.
-The dataset and its info can be accessed [here](https://www.kaggle.com/datasets/andradaolteanu/country-mapping-iso-continent-region/).
+**NOC - Region**.
+The dataset and its info can be accessed [here](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/blob/main/csv_raw/noc_regions.csv).
 
 The SQL script used to load the data from local csv files into my MySQL database can be found [here](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/blob/main/sql_scripts/upload_raw_data.sql).
 
@@ -29,7 +29,7 @@ that makes sense for our use case and helps reducing the number of repeated entr
 #### The initial idea
 Separate the AthleteEvents table into:
 * An Athletes Table: AthleteId (PRIMARY KEY), Name, Sex, Weight(?), Height, BirthYear(?)
-* A NOCs Table: NOC (PRIMARY KEY), CountryName, PrincipalContinentName
+* A NOCs Table: NOC (PRIMARY KEY), Region, Notes
 * A Games Table: Games (PRIMARY KEY), Year, Season, City
 * A Categories Table: Category (PRIMARY KEY), Sport
 * An Events Table: EventId (PRIMARY KEY), AthleteId, Team, NOC, Games, Category, Medal
@@ -53,9 +53,6 @@ Separate the AthleteEvents table into:
    on Melbourne, Australia with the exception of the equestrian events, which were held in Stockholm, Sweden.
    This gave me a problem because now the primary key '1956 Summer' has two cities associated with it. <br />
    **SOL**: Creating a new Games id for equestrian events ocurred in 1956 called '1956 Summer Equestrianism'.
-5. While populating my NOCs Table I encountered countries that
-   belong to both continents Europe and Asia. <br />
-   **SOL**: Decided to group them around a PrincipalContinentName.
 
 The SQL cript used to wrangle the data into these five different tables with their corresponding relations between each other can be found [here](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/blob/main/sql_scripts/data_wrangling.sql).
 
@@ -63,7 +60,8 @@ The SQL cript used to wrangle the data into these five different tables with the
 
 Once our data is modelled adequately, with the help of [MySQL Workbench](https://www.mysql.com/products/workbench/), an automatic Entity Relationship Diagram is created as follows. <br />
 
-![erd](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/assets/75987848/0d6595e0-a25f-48fd-852f-930c33e891ec)
+![erd](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/assets/75987848/eb73a6d4-5d28-4bf8-8b69-be63f27f6627)
+
 
 
 ## An initial exploration
