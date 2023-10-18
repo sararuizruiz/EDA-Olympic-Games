@@ -17,7 +17,7 @@ def create_db_connection(host_name, user_name, user_password, db_name):
 
     return connection
 
-def execute_query(connection, query):
+def execute_transaction_query(connection, query):
     cursor = connection.cursor(buffered=True)
     try:
         cursor.execute(query)
@@ -25,3 +25,13 @@ def execute_query(connection, query):
         print("Query successful")
     except Error as err:
         print(f"Error: '{err}'")
+
+def execute_fetchall_query(connection, query):
+    cursor = connection.cursor(buffered=True)
+    try:
+        cursor.execute(query)
+        result = cursor.fetchall()
+        for row in result:
+            print(row)
+    except Error as err:
+        print(f"Error: '{err}'")   
