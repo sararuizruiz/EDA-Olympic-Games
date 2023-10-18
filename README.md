@@ -63,12 +63,17 @@ Once our data is modelled adequately, with the help of [MySQL Workbench](https:/
 
 ![erd](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/assets/75987848/eb73a6d4-5d28-4bf8-8b69-be63f27f6627)
 
+## The Exploration
+<details>
+    <summary> How old are the oldest and youngest medalists? </summary>
+    <br /> 73 and 10 years old.
+</details>
+
+<details>
+    <summary> What is the age distribution of the medalists? </summary>
+    <br/>
+    <p align="center"> <img width="600" alt="Screenshot 2023-10-18 at 17 12 11" src="https://github.com/sararuizruiz/EDA_Olympic_Games/assets/75987848/0bce4bd7-dd74-4bd3-995f-d19f37179d76"> <p/>
+</details>
 
 
-## An initial exploration
 
-## ML with Scikit-Learn and Tensorflow
-
-## A second exploration
-
-## Data visualisation via Tableau
