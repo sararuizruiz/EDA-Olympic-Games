@@ -62,6 +62,9 @@ The SQL cript used to wrangle the data into these five different tables with the
 Once our data is modelled adequately, with the help of [MySQL Workbench](https://www.mysql.com/products/workbench/), an automatic Entity Relationship Diagram is created as follows. <br />
 
 ![erd](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/assets/75987848/eb73a6d4-5d28-4bf8-8b69-be63f27f6627)
+<br />
+The data now follows a Star design where 'Events' is the 'Fact Table' which contains the core metrics.
+
 
 ## The Exploration
 <details>
