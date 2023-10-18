@@ -22,7 +22,7 @@ The dataset and its info can be accessed [here](https://github.com/sararuizruiz/
 
 The SQL script used to load the data from local csv files into my MySQL database can be found [here](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/blob/main/sql_scripts/upload_raw_data.sql).
 
-## Data Wrangling: From Raw to Usable 
+## Data Modeling and Data Wrangling: From Raw to Usable 
 
 The data we possess is not ideal for data analysis and performance. That is why we take some time manually designing an Entity Relationship Diagram (ERD)
 that makes sense for our use case and helps reducing the number of repeated entries.
@@ -57,7 +57,7 @@ Separate the AthleteEvents table into:
 
 The SQL cript used to wrangle the data into these five different tables with their corresponding relations between each other can be found [here](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/blob/main/sql_scripts/data_wrangling.sql).
 
-## Creating the ERD
+## ERD Creation
 
 Once our data is modelled adequately, with the help of [MySQL Workbench](https://www.mysql.com/products/workbench/), an automatic Entity Relationship Diagram is created as follows. <br />
 
