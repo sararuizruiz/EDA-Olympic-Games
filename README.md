@@ -10,6 +10,7 @@ as well as answer some related questions.
 
 **Tech stack** 🛠️ 
 * SQL - [MySQL](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwijr82z0OiBAxViU6QEHQmBAPwQFnoECAYQAQ&url=https%3A%2F%2Fwww.mysql.com%2F&usg=AOvVaw20c6IrMAtNC1A9NZPsDpWW&opi=89978449), [MySQL Workbench](https://www.mysql.com/products/workbench/)
+* Python - [Pandas](https://pandas.pydata.org), [Seaborn](https://seaborn.pydata.org), [Matplotlib](https://matplotlib.org)
 
 ## Introducing the originial datasets
 The project scrapes data from different sources, in particular, we need two different datasets to have the full information for the analysis.
