@@ -84,6 +84,7 @@ The data now follows a Star design where 'Events' is the 'Fact Table' which cont
 
 
 ## The Exploration
+All the code used to explore the data and answer the following questions, with its respective tables, graphs and further explanation can be found in this [Jupyter Notebook](https://github.com/sararuizruiz/EDA_Olympic_Games/blob/main/SportsStats.ipynb).
 
 ### Age Exploration
 <details>
