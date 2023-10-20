@@ -74,7 +74,7 @@ Separate the AthleteEvents table into:
 
 The SQL cript used to wrangle the data into these five different tables with their corresponding relations between each other can be found [here](https://github.com/sararuizruiz/Olympic_Games_Data_Exploration/blob/main/sql_scripts/data_wrangling.sql).
 
-## ERD Creation
+## ERD Creation (Star Design)
 
 Once our data is modelled adequately, with the help of [MySQL Workbench](https://www.mysql.com/products/workbench/), an automatic Entity Relationship Diagram is created as follows. <br />
 
@@ -136,9 +136,12 @@ A sencond example: The most popular sport across Africa is well known to be Foot
 ### New Metric: BMI (Body Mass Index) Exploration
 <details>
     <summary> What is the average BMI of medalists across different sports?  </summary>
-    These bar chart shows exactly that. One can observe that Weightlifting is the sport with highest average bmi within its medalists. 
-    This makes sense since they need a highest muscle mass to perform best at their sport. Not the same case for Gymnastics, for example.<br />
-    ![bmi](https://github.com/sararuizruiz/EDA_Olympic_Games/assets/75987848/f94a640b-220b-4056-b007-a472a6d591af)
+    These bar chart shows exactly that. One can observe that Weightlifting is the sport with highest average BMI within its medalists. 
+    This makes sense since they need a highest muscle mass to perform best at their sport. <br />
+    <br/>
+    <img width="645" alt="Screenshot 2023-10-20 at 12 52 10" src="https://github.com/sararuizruiz/EDA_Olympic_Games/assets/75987848/f986915f-ef6c-4878-b776-fe6b533b4321">
+
+
 
 
 </details>
