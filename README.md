@@ -142,10 +142,11 @@ A sencond example: The most popular sport across Africa is well known to be Foot
     <br/>
     <img width="645" alt="Screenshot 2023-10-20 at 12 52 10" src="https://github.com/sararuizruiz/EDA_Olympic_Games/assets/75987848/f986915f-ef6c-4878-b776-fe6b533b4321">
 
-
-
-
 </details>
+
+## Key Insights and Conclusions
+
+In conclusion, data analysis and exploration can provide valuable insights that can help us understand trends and patterns in the Olympic Games results over the years. For example, and as a practical use, this information can be used to create strategies for athlete training, performance, and promoting gender equality in sports.
 
 
 
